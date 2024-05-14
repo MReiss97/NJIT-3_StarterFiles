@@ -24,25 +24,50 @@
 const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
-      created () {
+      created() {
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
             })
       },
       data() {
-        return {
-            // This holds your movies.json data.
-            movies: [],
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            title: "IMDB + Max's Top 8 Movies",
-            owner: 'Max',
-            github: 'https://github.com/MReiss97/NJIT-3_StarterFiles', 
-      }
-    },
+            return {
+                  // This holds your movies.json data.
+                  movies: [],
+                  /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+                  title: "IMDB + Max's Top 8 Movies",
+                  owner: 'Max',
+                  github: 'https://github.com/MReiss97/NJIT-3_StarterFiles',
+            }
+      },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            getMonthText(dateArray){
-                  
+            getMonthText(dateArray) {
+                  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                  year = dateArray[0];
+                  monthIndex = dateArray[1] - 1;
+                  day = dateArray[2];
+                  month = months[monthIndex];
+                  return `${month} ${day}, ${year} `;
+            },
+            posterClick(index) {
+                  this.posterIndex++;
+                  // Check if posterIndex exceeds the last index of the posters array
+                  if (this.posterIndex >= this.posters.length) {
+                        this.posterIndex = 0; // Loop back to the first index
+                  }
+            },
+            timeText(minutes){
+                  const hours = Math.trunc(minutes / 60);
+                  const remainingMinutes = minutes % 60;
+              
+                  // Construct the time text
+                  let text = '';
+                  if (hours > 0) {
+                      text += hours + 'h ';
+                  }
+                  text += remainingMinutes + 'm';
+              
+                  return text;
             }
       }
 })
