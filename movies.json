@@ -1,7 +1,7 @@
 [
       {
             "title": "The Shawshank Redemption",
-            "iscore": 9.3,
+            "iscore": 9.4,
             "rating": "R",
             "runtime": 142,
             "released": [1994, 10, 14],
@@ -14,8 +14,36 @@
             "posterindex": 0
       },
       {
-            "title": "The Godfather",
+            "title": "Misson: Impossible - Fallout",
+            "iscore": 9.3,
+            "rating": "PG-13",
+            "runtime": 147,
+            "released": [2018, 7, 26],
+            "country": "USA",
+            "posters": ["img/mission impossible 1.jpg", "img/mission impossible 2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt4912910/",
+            "website": "https://www.paramountpictures.com/movies/mission-impossible-fallout",
+            "likes": 970,
+            "dislikes": 118,
+            "posterindex": 0
+      },
+      {
+            "title": "Oppenheimer",
             "iscore": 9.2,
+            "rating": "R",
+            "runtime": 180,
+            "released": [2023, 7, 21],
+            "country": "USA",
+            "posters": ["img/oppenheimer1.jpeg", "img/oppenheimer2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt15398776/",
+            "website": "https://www.uphe.com/movies/oppenheimer",
+            "likes": 950,
+            "dislikes": 114,
+            "posterindex": 0
+      },
+      {
+            "title": "The Godfather",
+            "iscore": 9.1,
             "rating": "R",
             "runtime": 175,
             "released": [1972, 3, 24],
@@ -39,6 +67,20 @@
             "website": "https://www.facebook.com/thegodfather",
             "likes": 855,
             "dislikes": 99,
+            "posterindex": 0
+      },
+      {
+            "title": "Hustle",
+            "iscore": 9.0,
+            "rating": "R",
+            "runtime": 117,
+            "released": [2022, 6, 3],
+            "country": "USA",
+            "posters": ["img/hustle2.webp", "img/hustle1.webp"],
+            "imdb": "https://www.imdb.com/title/tt8009428/",
+            "website": "https://www.paramountpictures.com/movies/hustle",
+            "likes": 840,
+            "dislikes": 115,
             "posterindex": 0
       },
       {
